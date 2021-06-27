@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    /* background-color: rgb(73, 73, 224); */
+    background-image: url('back.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clock{
+    border: 20px solid white;
+    width: 10rem;
+    height: 10rem;
+    padding: 2rem;
+    margin: 100px 20% 0 30%;
+    position: relative;
+    border-radius: 50%; 
+    animation: progress 1s infinite;
+    box-shadow: 
+     10px 0 0px 4px rgba(0,0,0,0.1),
+     inset 5px 0px 100px 5px rgb(252, 63, 63),
+     inset 0 0 10px black,
+     0 0 10px rgba(0,0,0,0.2);
+
+     
+}
+@keyframes progress {
+    from {
+    background: white;border-color: white;}
+    to {
+    background: blue; border-color: black;}
+  }
+
+.clock-face{
+    position: relative;
+    width: 120%;
+    height: 100%;
+    transform: translateY(-10px);
+    transform: translateX(-20px);
+   
+
+}
+
+.hand{
+   
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100% ;
+    transform: rotate(90deg);
+    transition: all 0.095s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}

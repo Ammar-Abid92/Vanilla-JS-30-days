@@ -54,16 +54,22 @@ progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
 
 
-const svgs = document.querySelector('svg')
+const svgs = document.querySelector('.fullscreen-icon');
 console.log(svgs)
-
+const newsvg = document.querySelector('.unfullscreen-icon')
+console.log(newsvg)
 
 const full = document.querySelector('.fullscreen')
 function check(){
+    let toggle = true;
     player.classList.toggle('fullscreen')
     if(toggle){
-        
+    svgs.remove();
+    
+    }else {
+        newsvg.remove();
+    }
     }
     
-}
+
 full.addEventListener('click', check)

@@ -1,0 +1,29 @@
+
+body{
+    text-align: center;
+    background-color: #193459;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+.control{
+    margin-bottom: 50px;
+}
+
+
+:root{
+    --spacing : 20px;
+    --blur: 30px;
+    --base: #00ca76;
+}
+img{
+    width: 70%;
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+}
+
+.js{
+    color: var(--base);
+}
